@@ -158,6 +158,7 @@ button {
     width: 60%;
     outline: 1px solid red;
 }
+
 .rightButton {
     display: flex;
     flex-direction: row-reverse;
@@ -334,3 +335,24 @@ footer {
         outline: 1px solid red;
     } 
 }
+.slowlyRotate {
+    animation: rotation 5000ms infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* n.b. make sure you're putting animation classes and keyframes in the right document */
