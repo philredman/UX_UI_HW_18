@@ -4,28 +4,32 @@
         <title>
             HRRN - Rabbit Resource. House Rabbit Resource Network redesign proposal.
         </title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header class="navigation">
             <div class="inline-block logoTitle">
                 <img src="images/purp hrrn logo.png" class="logoPurp">
                 <p class="titleHRRN">House Rabbit Resource Network</p>
-                <!-- this did not push last time. Huh. -->
+                <!-- this did not push last time. Huh. WAIT - caching -->
             </div>
             <nav class="inline-block grid-container-nav">
                 <!-- Not sure I'm doing this bit right -->
-                <div class="navTab gridTab">Learn</div>
-                <div class="navTab gridTab">Adopt</div>
-                <div class="navTab gridTab">Help Out</div>
-                <a href="/found/" class="navLink gridLink">Found a Bunny?</a>
-                <a href="/boutique /" class="navLink gridLink">Bunny Boutique</a>
-                <a href="/about/" class="navLink gridLink">About Us</a>
-                <a href="/archive/" class="navLink gridLink">Archive</a>
-                <a href="/contact/" class="navLink gridLink">Contact Us</a>
+                <div class="navTabDiv">
+                    <div class="navTab gridTab">Learn</div>
+                    <div class="navTab gridTab">Adopt</div>
+                    <div class="navTab gridTab">Help Out</div>
+                </div>
+                <div class="navLinkDiv">
+                    <a href="/found/" class="navLink gridLink">Found a Bunny?</a>
+                    <a href="/boutique /" class="navLink gridLink">Bunny Boutique</a>
+                    <a href="/about/" class="navLink gridLink">About Us</a>
+                    <a href="/archive/" class="navLink gridLink">Archive</a>
+                    <a href="/contact/" class="navLink gridLink">Contact Us</a>
+                </div>
             </nav>
         </header>
         <section class="ourMission">
@@ -38,7 +42,7 @@
             </div>
         </section>
         <section class="CTAcards">
-            <div class="content card">
+            <div class="card">
                 <img src="images/ready to adopt bun.png" class="cardImg">
                 <h3 class="cardText">Ready to Adopt?</h3>
                 <p class="cardText">Rabbits can be pretty tricky. Take this quiz to see if you’re ready to hop into it and adopt one of our bunnies.</p>
@@ -46,7 +50,7 @@
                    <button id="takeQuiz">Take the Quiz!</button>
                 </div>
             </div>
-            <div class="content card">
+            <div class="card">
                 <img src="images/bunny boutique resized.png" class="cardImg">
                 <h3 class="cardText">Need Rabbit Supplies?</h3>
                 <p class="cardText">Our bunny boutique offers rabbit hutches, papaya pellets and more. Curbside pickup now available.</p>
@@ -54,7 +58,7 @@
                     <button id="bunnyBoutique">Bunny Boutique</button>
                 </div>
             </div>
-            <div class="content card">
+            <div class="card">
                 <img src="images/become a volunteer bun.png" class="cardImg">
                 <h3 class="cardText">Become a Volunteer</h3>
                 <p class="cardText">Learn all about Bunny basics during a volunteer shift. Get hands on experience and learn about rabbit diet, feeding, grooming, illnesses, habitat and general care.</p>
@@ -65,7 +69,7 @@
         </section>
         <section class="content">
             <H2>News</H2>
-            <div class="news">
+            <div class="news newsArea">
                 <div class="funRunText">
                     <H3>Rabbit FunRun2022</H3>
                     <p> After a two year hiatus due to the ongoing pandemic, we are excited to hold our fun run again!</p>
