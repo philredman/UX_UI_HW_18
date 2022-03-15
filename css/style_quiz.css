@@ -236,3 +236,50 @@ footer {
     padding: 10%;
     outline: 1px solid red;
 }
+.adoptionQuiz {
+    outline: 1px solid red;
+}
+.onlyQuestions {
+    color: #33103b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    outline: 1px solid red;
+    text-align: right;
+}
+.quizButtonDiv {
+    display: flex;
+    flex-direction: reverse;
+    outline: 3px dotted red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    left: 0px;
+    width: 300px;
+    float: right;
+    /* MAKE THIS WORK - needs to be pegged to the right border of the .fullquiz class, I think. Being a real pill about that though. Position: initial on fullQuiz and position: relative on .quizButtonDiv seems to help, but the width gets weird. How to make the 'normal' position be the right edge instead? maybe put them both in another div and have THAT new div be text-align right? */
+    /* of COURSE it was align-items, wow, who did this to me */
+}
+.quizButton {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+.rightAlignExperiment {
+    text-align: right;
+}
+.quizQuestion {
+    text-align: left;
+}
+.anotherAlignExperiment {
+    display: flex;
+    flex-direction: column-reverse;
+    outline: 1px solid red;
+    align-items: flex-end;
+}
+.adoptionQuiz {
+    padding: 40px 100px 40px 100px;
+}
+.fullQuiz {
+    outline: 1px solid red;
+}
